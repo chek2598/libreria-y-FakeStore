@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    font-family: montserrat;
+}
+body{
+    background: #e6e3e3;
+}
+.fondo-naranja{
+    background-color: rgba(242, 101, 40, 0.833);
+    color: aliceblue;
+    font-weight: bold;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 14vh;
+    border-bottom: 1px solid black;
+}
+.margen{
+    width: 1100px;
+    margin: auto;
+}
+.hiper{
+    color: aliceblue;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 4px;
+
+}.hiper:hover{
+    background-color: aliceblue;
+    color:rgba(242, 101, 40, 0.833) ;
+}
+.ancho{
+    max-width: 600px;
+}
+.libreria{
+    border-left: 4px solid black;
+    border-top: 2px solid black;
+    margin: auto;
+    border-radius: 2px;
+    }
+
+.libreria input{
+    border: none;
+    border-radius: 2px;
+    border-top: 2px solid black;
+    border-left: 4px solid black;
+    
+}.libreria input:hover{
+    background-color: rgb(253, 211, 3);
+}.libreria input:active{
+    background-color: rgb(253, 211, 3);
+}
+
+.boton:hover{
+   background-color: rgb(253, 211, 3);
+}
+.libreria-oferta{
+   margin-bottom: 10px;
+   padding-bottom: 20px;
+   
+}
+h2{
+    text-align: center;
+    
+}
+.libro{
+    margin: 20px;
+    border-radius: 4px;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: 70% auto;
+
+}
+.icon{
+    font-size: 5em;
+    margin: auto;
+    
+}
+.tiendita{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    column-gap: 2vw;
+    row-gap: 2vh;
+}
+.data{
+    border-radius: 4px;
+    border-left: 4px solid black;
+    border-top: 2px solid black;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    height: 200px;
+    background: #e6e3e3;
+    color: black ;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+    padding: 15px;
+}
+.datos{
+    font-weight: 100;
+    padding-top: 20px;
+    padding-left: 20px;
+    color: white;
+}.datos p{
+    font-weight: 300;
+}
+.imagen{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 60%;
+
+}.imagen img{
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    width: 60%;
+    height: 100%;
+    
+}
+.category{
+    display: flex;
+    flex-wrap: wrap;
+} .titulaso{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-weight: bolder;
+} .precio{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.titulongo{
+    width: 40%;
+    margin: auto;
+    border-left: 4px solid black;
+    border-top: 2px solid black;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    background: #e6e3e3;
+    color:rgba(15, 5, 1, 0.833) ;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+@media screen and (min-width:961px) and (max-width:1160px){
+
+        .tiendita{
+        grid-template-columns: 1fr 1fr 1fr; 
+        }   
+        .margen{
+            width: 900px;
+        }
+}
+@media screen and (min-width:641px) and (max-width:960px){
+
+    .tiendita{
+    grid-template-columns: 1fr 1fr; 
+    }   
+    .margen{
+        width: 600px;
+    }
+}
+@media screen and (max-width:640px){
+
+    .tiendita{
+    grid-template-columns: 1fr;
+     
+    }   
+    .margen{
+        width: 460px;
+    }
+    .data{
+        width: 80%;
+        margin: auto;
+    }
+}
